@@ -19,27 +19,27 @@ git clone https://github.com/your-username/docker-laravel-authentication.git
 
 3. **Navigate to the Project Directory**: Change your current directory to the cloned repository:
 
-** cd docker-laravel-authentication **
+**cd docker-laravel-authentication**
 
 
 4. **Build and Run Docker Containers**: Run the following command to build and run the Docker containers:
 
-** docker-compose up -d --build **
+**docker-compose up -d --build**
 
 
 5. **Install Laravel Dependencies**: Once the Docker containers are up and running, install Laravel dependencies using Composer:
 
-** docker-compose exec app composer install **
+**docker-compose exec app composer install**
 
 
 6. **Generate Application Key**: Generate the application key for Laravel:
 
-** docker-compose exec app php artisan key:generate **
+**docker-compose exec app php artisan key:generate**
 
 
 7. **Run Migrations**: Run database migrations to create the necessary tables:
 
-** docker-compose exec app php artisan migrate **
+**docker-compose exec app php artisan migrate**
 
 
 Now you should have a Laravel application running with Docker and authentication functionality set up.
